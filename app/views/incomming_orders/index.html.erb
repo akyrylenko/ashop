@@ -1,0 +1,23 @@
+<h1>Listing incomming_orders</h1>
+
+<table>
+  <tr>
+    <th>Seller</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @incomming_orders.each do |incomming_order| %>
+  <tr>
+    <td><%= incomming_order.seller_id %></td>
+    <td><%= link_to 'Show', incomming_order %></td>
+    <td><%= link_to 'Edit', edit_incomming_order_path(incomming_order) %></td>
+    <td><%= link_to 'Destroy', incomming_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Incomming order', new_incomming_order_path %>

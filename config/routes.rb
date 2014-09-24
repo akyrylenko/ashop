@@ -1,4 +1,10 @@
 Ashop::Application.routes.draw do
+  resources :incomming_orders
+
+
+  resources :orders
+
+
   resources :customers
 
 
