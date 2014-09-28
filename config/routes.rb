@@ -1,4 +1,7 @@
 Ashop::Application.routes.draw do
+  resources :ordered_products
+
+
   resources :sellers
 
 
