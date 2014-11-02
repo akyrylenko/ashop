@@ -1,4 +1,7 @@
 Ashop::Application.routes.draw do
+  resources :prices
+
+
   resources :order_items
 
 
