@@ -1,4 +1,7 @@
 Ashop::Application.routes.draw do
+  resources :comments
+
+
   resources :prices
 
 
